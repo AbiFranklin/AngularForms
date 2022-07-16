@@ -1,0 +1,28 @@
+.body {
+  background: rgb(78, 81, 102);
+  background: linear-gradient(
+    45deg,
+    rgba(78, 81, 102, 1) 0%,
+    rgba(55, 130, 166, 1) 62%
+  );
+}
+
+.container {
+  height: 100vh;
+}
+
+.row {
+  height: 100vh;
+}
+
+.col-5 {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  color: black;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 3rem darkslategray;
+}
+
+h2{
+    text-align: center;
+}

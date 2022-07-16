@@ -1,0 +1,84 @@
+<div class="body">
+  <div class="container">
+    <div class="row align-items-center d-flex justify-content-center">
+      <div class="col-5">
+        <h2>User Settings</h2>
+        <br />
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Name"
+          />
+        </div>
+        <br />
+        <div class="form-check form-group">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="emailOffers"
+            name="emailOffers"
+          />
+          <label class="form-check-label" for="emailOffers">
+            Email Special Offers
+          </label>
+        </div>
+        <br />
+        <h5>User Interface Styling</h5>
+        <div class="form-group">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="interfaceStyle"
+              id="lightInterface"
+              value="light"
+              checked
+            />
+            <label class="form-check-label" for="lightInterface"> Light </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="interfaceStyle"
+              id="mediumInterface"
+              value="medium"
+            />
+            <label class="form-check-label" for="mediumInterface">
+              Medium
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="interfaceStyle"
+              id="darkInterface"
+              value="dark"
+            />
+            <label class="form-check-label" for="darkInterface"> Dark </label>
+          </div>
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="subscriptionType">Subscription Type</label>
+          <select class="form-control" id="subscriptionType">
+            <option>Monthly</option>
+            <option>Annual</option>
+            <option>Lifetime</option>
+          </select>
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" class="form-control" rows="3"></textarea>
+        </div>
+        <br />
+        <button class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
