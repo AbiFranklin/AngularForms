@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { UserSettings } from '../data/usersetting';
 
 @Component({
@@ -9,11 +10,8 @@ import { UserSettings } from '../data/usersetting';
 export class UserSettingsFormComponent implements OnInit {
 
   originalUserSettings: UserSettings = {
-    name: 'Abi',
-    emailOffers: true,
-    interfaceStyle: "medium",
-    subscriptionType: "Lifetime",
-    notes: "Some Notes...."
+    user: '',
+    password: ''
   }
 
   userSettings: UserSettings = {...this.originalUserSettings};
@@ -21,6 +19,11 @@ export class UserSettingsFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit = (form: NgForm) => {
+    var results = form.form.value;
+    console.log('FORM: ', results.user, results.password)
   }
 
 }
